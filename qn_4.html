@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSneakers</title>
+    <link rel="stylesheet" href="qn_4.css">
+</head>
+<body>
+    <h1 class="top">ShopSneakers</h1>
+    <header>        
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <div class="cart"><a href="#"><img src="shopping_cart.png" alt="Cart"></a></div>
+            </li>
+        </ul>    
+    </header>
+    <main>
+        <div class="product" id="gridtag">
+            <div class="product-images">
+                <img src="Jordans_pink-blue.jpg" alt="Sneaker Main" class="image_big" id="mainImage">
+                <div class="mini-pics">
+                    <img src="IMG1.jpg" alt="Sneaker mini 1" class="mini" onclick="changeImage(this)">
+                    <img src="IMG2.jpg" alt="Sneaker mini 2" class="mini" onclick="changeImage(this)">
+                    <img src="Pink_sneakers.webp" alt="Sneaker mini 3" class="mini" onclick="changeImage(this)">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="heading2">THE SNEAKER STORE</h1>
+                <h2>Pace & Grace Sneaker Collection</h2>
+                <p>The aesthetics of Air Jordan sneakers combine a sleek, sporty design with cultural flair, embodying a blend of athletic functionality and street style.</p>
+                <p>Jordans are known for their distinctive and varied silhouettes, from high-top to low-top designs, often characterized by bold lines and a robust build that provide both support and a fashionable edge.</p>
+                <p class="price">$150</p>
+                <div class="qty-selector">
+                    <button class="qty-btn" id="dec">-</button>
+                    <input type="number" id="qty" value="0" readonly>
+                    <button class="qty-btn" id="inc">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="view_also">
+                <h1>Other Products</h1>
+                <div>
+                    <ul class="prod A">
+                        <li><img src="Jordans_purple.jpg" alt="Jordans Purple" class="img"></li>
+                        <li><span class="name">NEW</span></li>
+                    </ul>
+                </div>
+                <hr class="line">
+                <div>
+                    <ul class="prod B">
+                        <li><img src="jordans_blue.jpg" alt="Jordans Blue" class="img"></li>
+                        <li><span class="name">NEW</span></li>
+                    </ul>
+                </div>
+                <hr class="line">
+                <div>
+                    <ul class="prod C">
+                        <li><img src="jordans_teal.jpg" alt="Jordans Teal" class="img"></li>
+                        <li><span class="name">POPULAR</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="qn_4.js"></script>
+</body>
+</html>
